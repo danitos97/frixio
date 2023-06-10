@@ -1,3 +1,7 @@
 :root{
-    --scroll-color: red;
+    --scroll-color: #007940;
+    --header-color: #d3d3d3;
+    --main-color: #007940;
+    --secondary-color: #7eba2c;
+    --light-gray: #e3e3e2;
 }

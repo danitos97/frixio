@@ -1,0 +1,60 @@
+.landing{
+    height: 800px;
+    background-color: var(--light-gray);
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+.landing > div{
+    position: relative;
+}
+.logo-frixio-2{
+    width: 150px;
+    margin-top: -64px;
+    margin:0 auto;
+}
+
+.landing .fresas{
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+}
+/* .landing .fresas img{
+    margin-bottom: -4px;
+} */
+
+.landing .name{
+    display: inline-block;
+    position: absolute;
+    top:500px;
+    left:calc(50% - 500px);
+}
+.landing .name .square{
+    width: 100px;
+    height: 45px;
+    background-color: var(--main-color);
+    margin-right: 1em;
+}
+.landing .name > div{
+   
+    rotate: -90deg;
+    padding-left: 1em;
+    height: 40px;
+}
+.landing .name > div > *{
+    display: inline-block;
+    vertical-align: middle;
+}
+h1{
+    color:var(--main-color);
+    font-size: 60px;
+    padding: 0;
+    letter-spacing: .1em;
+   
+}
+h2{
+    text-align: center;
+    color:var(--main-color);
+    font-size:60px;
+    font-weight: bolder;
+    width: 80%;
+}

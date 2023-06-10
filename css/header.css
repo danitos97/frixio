@@ -1,0 +1,50 @@
+header{
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    height: 72px;
+    background-color: var(--header-color);
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 2;
+}
+.logo-alivsa{
+    background-color: var(--main-color);
+    height: 80px;
+    border-bottom-right-radius: 55px;
+    display: grid;
+    align-items: center;
+}
+.logo-alivsa > div{
+    width: 100px;
+    margin: 0 auto;
+}
+.logo-frixio > div{
+   width: 120px;
+   margin: 0 auto;
+   padding-top: 10px;
+   overflow: hidden;
+   height: 72px;
+   
+}
+.menu{
+    background-color: var(--secondary-color);
+    height: 80px;
+    border-bottom-left-radius: 55px;
+    display: grid;
+    align-items: center;
+}
+.menu-icon{
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 6px;
+    width: 48px;
+    margin:0 auto;
+    
+}
+.menu-icon > div{
+    background-color:white;
+    height: 6px;
+}
+

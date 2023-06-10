@@ -1,0 +1,43 @@
+.nosotros{
+    padding-bottom: 80px;
+}
+.nosotros .info{
+    display: grid;
+    max-width: 900px;
+    grid-template-columns: 100px 1fr;
+    gap:3em;
+    margin: 0 auto;;
+}
+.nosotros .vertical{
+    /* background-color: lightgrey; */
+    color: var(--secondary-color);
+    font-size: 36px;
+    font-weight: bolder;
+}
+.nosotros .vertical > div{
+    width: 1000px;
+    transform-origin: 70px 100%;
+    rotate:-90deg;
+    transform: translateX(-790px);
+}
+.nosotros .vertical > div > div{
+   display: inline-block;
+   vertical-align: middle;
+   
+}
+.nosotros .vertical .square{
+    width: 80px;
+    height: 30px;
+    background-color: var(--secondary-color);
+    margin-left: 50px
+}
+
+.nosotros p{
+    color:#333;
+}
+.nosotros-text{
+    height: 333px;
+}
+.mision-text{
+    height: 270px;
+}
