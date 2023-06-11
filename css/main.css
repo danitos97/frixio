@@ -24,40 +24,35 @@
     background-color: var(--secondary-color);
     border-bottom-left-radius: 55px;
 }
-h3{
-    text-align:center;
+
+.green-section{
+    background-color: var(--section-green);
+    /* height: 500px; */
+    margin-bottom: 40px;
+    height: 648px;
+}
+.center{
+    text-align: center;
+}
+.futuro > div{
+    position: relative;
+
+}
+.img-fondo-futuro{
+    position: absolute;
+    top:0;
+    left:calc(50% - 310px);
+}
+.img-futuro{
+    position: absolute;
+    width: 500px;
+    top:150px;
+    left:calc(50% - 250px);
 }
 
 
-p{
-    text-align: justify;
-}
 
-/* .nosotros{
-    background-color: green;
-    color:white;
-}
-
-.mision{
-    background-color: darksalmon;
-}
-
-.mision > div{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap:1em;
-}
-
-.mision .col{
-    border:1px solid black;
-    padding:1em;
-}
-
-.mision p{
-    font-size: 18px;
-} */
-
-.temp{
+/* .temp{
     font-size:20px;
     font-weight: bolder;
 }
@@ -85,4 +80,4 @@ p{
 
 .process p{
     font-size:14px;
-}
+} */

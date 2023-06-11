@@ -1,5 +1,6 @@
 .nosotros{
-    padding-bottom: 80px;
+    /* padding-bottom: 80px; */
+    background-color: white;
 }
 .nosotros .info{
     display: grid;
@@ -31,7 +32,6 @@
     background-color: var(--secondary-color);
     margin-left: 50px
 }
-
 .nosotros p{
     color:#333;
 }
@@ -40,4 +40,16 @@
 }
 .mision-text{
     height: 270px;
+}
+.vision-text{
+    height: 100px;
+}
+.nosotros .cuchara{
+    text-align: center;
+}
+.nosotros .cuchara img{
+    margin-bottom: -4px;
+}
+.nosotros p {
+    text-align: justify;
 }

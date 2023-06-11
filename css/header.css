@@ -25,7 +25,6 @@ header{
    padding-top: 10px;
    overflow: hidden;
    height: 72px;
-   
 }
 .menu{
     background-color: var(--secondary-color);
@@ -35,16 +34,15 @@ header{
     align-items: center;
 }
 .menu-icon{
-
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 6px;
-    width: 48px;
+    width: 32px;
     margin:0 auto;
-    
 }
 .menu-icon > div{
     background-color:white;
-    height: 6px;
+    height: 4px;
+    border-radius: 2px;
 }
 
