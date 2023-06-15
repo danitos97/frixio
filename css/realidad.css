@@ -1,0 +1,50 @@
+
+.realidad{
+    padding: 40px 0;
+    margin-bottom: 40px;
+}
+
+.realidad > div{
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto;
+    left: -100px;
+}
+.realidad h3{
+    font-size: 36px;
+    font-weight: bolder;
+    letter-spacing: .1em;
+    color: var(--main-color);
+}
+.realidad h3:first-child{
+    color: var(--secondary-color);
+}
+.realidad p {
+    color: var(--main-color);
+    font-weight: bold;
+    text-align: justify;
+}
+.realidad ul{
+    padding-left: 1em;
+}
+.realidad .img-planta{
+    position:absolute;
+    top:-14px;
+    right: -210px;
+    width: 320px;
+}
+.realidad .img-planta-fresas{
+    position:absolute;
+    top:220px;
+    right: -170px;
+    width: 150px;
+}
+.realidad .img-woman{
+    position:absolute;
+    top:445px;
+    right: -140px;
+    width: 200px;
+}
+.realidad .text-objetivo{
+    width: 80%;
+}

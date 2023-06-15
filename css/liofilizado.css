@@ -1,0 +1,51 @@
+
+
+.liofilizado .text{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+
+.landing-liofilizado .name{
+    display: inline-block;
+    position: absolute;
+    top:400px;
+    left:calc(50% - 470px);
+}
+.landing-liofilizado h2{
+    display: inline-block;
+    position: absolute;
+    top:298px;
+    left:calc(50% - 385px);
+    width: auto;
+}
+.landing-liofilizado h3{
+    color:var(--main-color);
+    font-size: 55px;
+    padding: 0;
+    letter-spacing: .07em;
+}
+.liofilizado p, .liofilizado span{
+    color: var(--main-color);
+    font-weight: bolder;
+    /* text-align: justify; */
+}
+.liofilizado span{
+    font-size:70px;
+}
+.liofilizado h3{
+    font-size:33px;
+    color: var(--main-color);
+    /* text-align: center; */
+    margin-left: -1em;
+}
+.liofilizado .platanos{
+    width: 400px;
+    margin: 0 auto;
+}
+.liofilizado .platanos-text{
+    word-spacing: 2em;
+    letter-spacing: .1em;
+    margin-top: -2em;
+    font-weight: bolder;
+}

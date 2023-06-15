@@ -1,8 +1,19 @@
-@import "colors.css";
 @import "header.css";
-@import "scroll.css";
 @import "landing.css";
 @import "nosotros.css";
+@import "realidad.css";
+@import "productos.css";
+@import "liofilizado.css";
+
+:root{
+    --scroll-color: #007940;
+    /* --scroll-color: #333; */
+    --header-color: #d3d3d3;
+    --main-color: #007940;
+    --secondary-color: #7eba2c;
+    --light-gray: #e3e3e2;
+    --section-green: #14482A;
+}
 
 *{
     margin:0;
@@ -10,6 +21,7 @@
     border:0;
     box-sizing: border-box;
     font-family: 'Trebuchet MS';
+    /* font-family: sans-serif; */
 }
 
 .separator{
@@ -34,10 +46,10 @@
 .center{
     text-align: center;
 }
-.futuro > div{
+.green-section > div{
     position: relative;
-
 }
+
 .img-fondo-futuro{
     position: absolute;
     top:0;
@@ -49,6 +61,16 @@
     top:150px;
     left:calc(50% - 250px);
 }
+.img-nuestros{
+    position: absolute;
+    width: 500px;
+    top:215px;
+    left:calc(50% - 250px);
+}
+
+section:not(.liofilizado,.landing-liofilizado){
+    display: none;
+} 
 
 
 
@@ -81,3 +103,34 @@
 .process p{
     font-size:14px;
 } */
+
+
+body{
+    overflow: hidden;
+}
+
+.scroll{
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+@media screen and (min-width:570px){
+    .scroll::-webkit-scrollbar {
+      width: 8px;
+  
+    }
+     
+    .scroll::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 6px var(--scroll-color);
+    }
+     
+    .scroll::-webkit-scrollbar-thumb {
+      background-color: var(--scroll-color);
+      outline: 1px solid var(--scroll-color);
+    }
+  
+    .scroll{
+      scrollbar-width: thin;          /* "auto" or "thin" */
+      scrollbar-color: var(--scroll-color) rgb(255, 243, 220) !important;  
+    }
+}

@@ -1,11 +1,11 @@
 header{
     display: grid;
     grid-template-columns: 200px 1fr 200px;
-    height: 72px;
+    height: 64px;
     background-color: var(--header-color);
     position: fixed;
     top:0;
-    width: 100%;
+    width: calc(100% - 8px);
     z-index: 2;
 }
 .logo-alivsa{
@@ -20,11 +20,11 @@ header{
     margin: 0 auto;
 }
 .logo-frixio > div{
-   width: 120px;
+   width: 100px;
    margin: 0 auto;
-   padding-top: 10px;
+   padding-top: 8px;
    overflow: hidden;
-   height: 72px;
+   height: 64px;
 }
 .menu{
     background-color: var(--secondary-color);

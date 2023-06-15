@@ -1,0 +1,138 @@
+
+.productos{
+    padding-top:80px;
+    padding-bottom: 80px;
+    /* background-color: #eee; */
+    /* background-color: #bbb; */
+    /* background-color: #111; */
+}
+.productos > div{
+    max-width: 1200px;
+    margin:0 auto;
+    /* border:1px solid black; */
+    position: relative;
+    margin-bottom: 120px;
+    padding-top:40px;
+    background-color: #fff !important;
+    /* box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.25); */
+}
+.productos > div img{
+    filter:drop-shadow(2px 4px 5px rgba(0,0,0,0.3))
+}
+.productos h3, .productos h4{
+    color: var(--product-color);
+    padding-left: 100px;
+}
+.productos h3{
+    font-size:36px;
+}
+.productos h4{
+    font-size:26px;
+}
+
+.productos .col-1{
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+}
+.productos .col-2{
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    padding-left: 40px;
+    padding-right: 100px;
+    padding-top:50px;
+}
+.productos p{
+    font-size: 14px;
+    text-align: justify;
+}
+.productos b{
+    color: var(--product-color);
+}
+.productos span{
+    font-weight: bolder;
+    color:#555;
+}
+.productos .dec-1, .productos .dec-2{
+    position: absolute;
+}
+
+.productos .yogurt-mora{
+    --product-color:#486277;
+    background-color: hsl(207, 25%, 90%);
+}
+
+.productos .yogurt-mora .dec-1{
+    top:70px;
+    right: 20px;
+}
+.productos .yogurt-mora .dec-2{
+    bottom: -30px;
+    right: -30px;
+}
+
+
+.productos .yogurt-frutos{
+    --product-color: #8F1F28;
+    background-color: hsl(355, 64%, 95%);
+    /* background-color: hsl(0, 100%, 95%);
+    border-color: darkred; */
+}
+
+.productos .yogurt-frutos .dec-1{
+    top:-0px;
+    right: -40px;
+}
+.productos .yogurt-frutos .dec-2{
+    bottom: -130px;
+    right: 30px;
+}
+
+.productos .yogurt-durazno{
+    --product-color: #C95A1E;
+    background-color: hsl(21, 74%, 93%);
+}
+
+.productos .yogurt-durazno .dec-1{
+    top: 60px;
+    right: -0px;
+}
+.productos .yogurt-durazno .dec-2{
+    bottom: -40px;
+    right: -50px;
+}
+
+.productos .yogurt-pinia{
+    --product-color:#9A8516;
+    background-color: hsl(51, 87%, 95%);
+}
+.productos .yogurt-pinia .col-1 img{
+    width: 700px;
+}
+
+.productos .yogurt-pinia .dec-1{
+    top: 50px;
+    right: -0px;
+}
+.productos .yogurt-pinia .dec-2{
+    bottom: -100px;
+    right: -50px;
+}
+
+.productos .yogurt-fresa{
+    --product-color: red;
+}
+.productos .yogurt-fresa .col-1 img{
+    width: 700px;
+}
+
+.productos .yogurt-fresa .dec-1{
+    top: 60px;
+    right: -0px;
+}
+.productos .yogurt-fresa .dec-2{
+    bottom: -60px;
+    right: -30px;
+}
+
