@@ -68,9 +68,9 @@
     left:calc(50% - 250px);
 }
 
-section:not(.liofilizado,.landing-liofilizado){
+/* section:not(.liofilizado,.landing-liofilizado){
     display: none;
-} 
+}  */
 
 
 
