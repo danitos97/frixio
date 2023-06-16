@@ -1,0 +1,61 @@
+footer{
+    background-color: var(--main-color);
+    color:#eee;
+    letter-spacing: .11em;
+}
+footer > div{
+    padding-top:100px;
+    padding-bottom: 60px;
+    position:relative;
+}
+footer .top-decoration{
+    width: 140px;
+    height: 60px;
+    background-color: var(--third-color);
+    position: absolute;
+    top:0;
+    left: 0;
+    border-bottom-right-radius: 30px;
+}
+
+footer .bot-decoration{
+    width: 140px;
+    height: 60px;
+    background-color: var(--secondary-color);
+    position: absolute;
+    bottom:0;
+    right: 0;
+    border-top-left-radius: 30px;
+
+}
+ 
+footer .logos .alivsa{
+    width: 180px;
+}
+footer .logos .frixio{
+    width: 150px;
+    border: 0 solid white;
+    border-left-width: 1px;
+    padding-left: 2em;
+    margin-left: 2em;
+}
+footer .phone{
+    word-spacing: 1em;
+}
+footer .links{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 12px;
+}
+footer .links > *{
+    display: inline-block;
+    vertical-align: middle;
+}
+footer .links > a > *{
+    display: inline-block;
+    vertical-align: middle;
+}
+footer span{
+    margin-left: .4em;
+    margin-right: 1em;
+}

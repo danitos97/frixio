@@ -4,15 +4,22 @@
 @import "realidad.css";
 @import "productos.css";
 @import "liofilizado.css";
+@import "footer.css";
+
 
 :root{
-    --scroll-color: #007940;
-    /* --scroll-color: #333; */
     --header-color: #d3d3d3;
     --main-color: #007940;
     --secondary-color: #7eba2c;
+    --third-color: #00615c;
+    --scroll-color: var(--third-color);
     --light-gray: #e3e3e2;
     --section-green: #14482A;
+}
+
+a{
+    color:inherit;
+    text-decoration: none;   
 }
 
 *{
@@ -39,7 +46,6 @@
 
 .green-section{
     background-color: var(--section-green);
-    /* height: 500px; */
     margin-bottom: 40px;
     height: 648px;
 }
@@ -68,42 +74,7 @@
     left:calc(50% - 250px);
 }
 
-/* section:not(.liofilizado,.landing-liofilizado){
-    display: none;
-}  */
-
-
-
-/* .temp{
-    font-size:20px;
-    font-weight: bolder;
-}
-
-.process{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: .5em;
-    background-color: hsl(120, 100%, 15%);
-}
-
-.process > div{
-    display: grid;
-    grid-template-columns: auto 1fr;
-    padding:1em;
-    align-items: center;
-    gap: 1em;
-    background-color: darkgreen;
-}
-
-.process span{
-    font-size: 48px;
-    color:yellowgreen
-}
-
-.process p{
-    font-size:14px;
-} */
-
+/* scroll */
 
 body{
     overflow: hidden;
