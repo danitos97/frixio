@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frixio</title>
     <link rel="stylesheet" href="css/main.css">
+    <script src="menu.js" defer></script>
 </head>
 <body>
 
@@ -19,11 +20,13 @@
                 </div>
             </div>
 
-            <div class="logo-frixio">
-                <div>
-                    <img src="imgs/logos/frixio.svg" alt="">
-                </div>
-            </div>
+            <nav class="desk">
+                <a href="#nosotros">   <div class="item">NOSOTROS</div></a>
+                <a href="#liofilizado"><div class="item">LIOFILIZADO</div></a>
+                <div class="logo-frixio"><img src="imgs/logos/frixio.svg" alt=""></div>
+                <a href="#productos">  <div class="item">PRODUCTOS</div></a>
+                <a href="#contacto">   <div class="item">CONTACTO</div></a>
+            </nav>
 
             <div class="menu">
                 <div class="menu-icon">
@@ -31,6 +34,12 @@
                     <div></div>
                     <div></div>
                 </div>
+                <nav class="movil">
+                    <a href="#nosotros">   <div class="item">NOSOTROS</div></a>
+                    <a href="#liofilizado"><div class="item">LIOFILIZADO</div></a>
+                    <a href="#productos">  <div class="item">PRODUCTOS</div></a>
+                    <a href="#contacto">   <div class="item">CONTACTO</div></a>
+                </nav>
             </div>
 
         </header>
@@ -61,7 +70,7 @@
                 <div></div>
             </div>
             <br><br><br><br><br><br><br>
-
+            <div class="anchor" id="nosotros"></div>
             <div class="info">
 
                 <div class="vertical">
@@ -159,6 +168,7 @@
                 <div></div>
             </div>
             <br><br>
+            <div class="anchor" id="liofilizado"></div>
             <div class="text">
                 <p>
                     El liofilizado es un proceso de conservación de alimentos, en los que se congelan los productos a temperaturas de
@@ -342,7 +352,7 @@
 
         
         <section class="productos">
-
+            <div class="anchor" id="productos"></div>
             <div class="producto yogurt-mora">
                 <h3>MORA AZUL CON CEREALES. </h3>
                 <h4>YOGURT LIOFILIZADO</h4>
@@ -591,6 +601,7 @@
         </section> 
         <br><br><br><br><br><br>
 
+        <div class="anchor" id="contacto"></div>
         <footer>
             <div class="center">
                 <div class="top-decoration"></div>

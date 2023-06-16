@@ -83,6 +83,8 @@ body{
 .scroll{
     overflow-y: scroll;
     height: 100vh;
+    scroll-behavior:smooth;
+    scroll-padding-top: 64px;
 }
 
 @media screen and (min-width:570px){
