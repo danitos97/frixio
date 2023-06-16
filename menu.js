@@ -4,7 +4,10 @@ const navMovil = document.querySelector("nav.movil");
 btnMenu.addEventListener("click" , function(e){
     navMovil.classList.toggle("active");
     e.stopPropagation();
-    window.addEventListener("click",closeMenu);
+    if(!navMovil.classList.contains("active"))
+        window.removeEventListener("click",closeMenu);
+    else
+        window.addEventListener("click",closeMenu);
 
 });
 
