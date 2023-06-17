@@ -75,7 +75,10 @@ header nav.movil .item{
     color:white;
     font-weight: bolder;
     font-size: 30px;
-    margin: 1em;
+    margin: .7em;
+    border:0 solid #ddd;
+    border-bottom-width: 1px;
+    padding-bottom: .3em;
 }
 
 
