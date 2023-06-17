@@ -1,7 +1,8 @@
 
 .realidad{
-    padding: 40px 0;
+    padding: 40px 1em;
     margin-bottom: 40px;
+    overflow: hidden;
 }
 
 .realidad > div{
@@ -47,4 +48,31 @@
 }
 .realidad .text-objetivo{
     width: 80%;
+}
+@media (max-width:730px){
+    .realidad > div{
+        left: 0;
+    }
+    .realidad .img-planta{
+        top:10px;
+        right: -50px;
+        width: 220px;
+    }
+    .realidad .img-planta-fresas{
+        top:220px;
+        right: -170px;
+        width: 150px;
+        display: none;
+    }
+    .realidad .img-woman{
+        bottom: 00px;
+        top:auto;
+        right: -40px;
+        width: 200px;
+    }
+    .realidad .text-objetivo{
+        width: calc(100% - 150px);
+        text-align: left;
+        min-width: 200px;
+    }
 }

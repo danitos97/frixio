@@ -8,11 +8,9 @@ btnMenu.addEventListener("click" , function(e){
         window.removeEventListener("click",closeMenu);
     else
         window.addEventListener("click",closeMenu);
-
 });
 
 function closeMenu(e){
-    console.log("listening");
     if(e.target.classList.contains("movil")) return;
     navMovil.classList.toggle("active");
     window.removeEventListener("click",closeMenu);

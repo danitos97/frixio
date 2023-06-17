@@ -2,6 +2,7 @@
 .productos{
     padding-top:80px;
     padding-bottom: 80px;
+    overflow: hidden;
     /* background-color: #eee; */
     /* background-color: #bbb; */
     /* background-color: #111; */
@@ -34,6 +35,10 @@
     display: inline-block;
     width: 50%;
     vertical-align: top;
+    vertical-align: top;
+}
+.productos .col-1 img{
+    max-width: 55vw;
 }
 .productos .col-2{
     display: inline-block;
@@ -136,3 +141,42 @@
     right: -30px;
 }
 
+@media (max-width:830px){
+    .productos > div{
+        margin-bottom: 120px;
+        padding-top:0px;
+    }
+    .productos{
+        padding-top:0px;
+    }
+    .productos h3, .productos h4{
+        padding-left: 0em;
+        text-align: center;
+    }
+    .productos h3{
+        font-size:30px;
+    }
+    .productos h4{
+        font-size:20px;
+    }
+    .productos .col-1{
+        display: inline-block;
+        width: 100%;
+        vertical-align: top;
+        vertical-align: middle;
+        text-align: center;
+    }
+    .productos .col-1 img{
+        max-width: 100%;
+    }
+    .productos .col-2{
+        display: inline-block;
+        width: 100%;
+        vertical-align: middle;
+        padding: 1em;
+    }
+
+    .productos .dec-1, .productos .dec-2 {
+        display: none;
+    }
+}

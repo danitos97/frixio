@@ -59,6 +59,7 @@ a{
     position: relative;
 }
 
+
 .img-fondo-futuro{
     position: absolute;
     top:0;
@@ -90,11 +91,38 @@ body{
     scroll-padding-top: 64px;
 }
 
+
 @media screen and (max-width:980px){
     .separator > div{
         max-width: calc(100% - 1px);
     }
+    .green-section  img{
+        max-width: 100%;
+    }
+    .img-fondo-futuro{
+        width: 310px;
+        left:calc(50% - 155px);
+        top:50px;
+    }
+    .img-futuro{
+        position: absolute;
+        width: 250px;
+        top: 100px;
+        left:calc(50% - 125px);
+    }
+    .img-nuestros{
+        position: absolute;
+        width: 300px;
+        top: 150px;
+        left:calc(50% - 155px);
+    }
+    .green-section{
+        background-color: var(--section-green);
+        margin-bottom: 40px;
+        height: 380px;
+    }
 }
+
 
 @media screen and (min-width:570px){
     .scroll::-webkit-scrollbar {
