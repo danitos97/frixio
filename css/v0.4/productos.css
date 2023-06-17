@@ -50,7 +50,7 @@
 }
 .productos p{
     font-size: 14px;
-    text-align: left;
+    text-align: justify;
 }
 .productos b{
     color: var(--product-color);
