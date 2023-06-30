@@ -1,0 +1,371 @@
+
+.productos-old{
+    display: none;
+    padding-top:80px;
+    padding-bottom: 80px;
+    overflow: hidden;
+    /* background-color: #eee; */
+    /* background-color: #bbb; */
+    /* background-color: #111; */
+}
+.productos-old > div{
+    max-width: 1200px;
+    margin:0 auto;
+    /* border:1px solid black; */
+    position: relative;
+    background-color: #fff !important;
+    /* box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.25); */
+}
+.productos-old h4{
+    font-size: 20px;
+    /* color:#444 !important; */
+}
+.productos-old > div img{
+    filter:drop-shadow(2px 4px 5px rgba(0,0,0,0.3))
+}
+.productos-old h3, .productos-old h4{
+    color: var(--product-color);
+    padding-left: 100px;
+}
+.productos-old h3{
+    font-size:30px;
+}
+
+
+.productos-old .col-1{
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    vertical-align: top;
+}
+.productos-old .col-1 img{
+    max-width: 55vw;
+}
+.productos-old .col-2{
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    padding-left: 40px;
+    padding-right: 100px;
+    padding-top:50px;
+}
+.productos-old p{
+    font-size: 14px;
+    text-align: justify;
+}
+.productos-old b{
+    color: var(--product-color);
+}
+.productos-old span{
+    font-weight: bolder;
+    color:#555;
+}
+.productos-old .dec-1, .productos-old .dec-2{
+    position: absolute;
+}
+
+.productos-old .yogurt-mora{
+    --product-color:#486277;
+    background-color: hsl(207, 25%, 90%);
+}
+
+.productos-old .yogurt-mora .dec-1{
+    top:70px;
+    right: 20px;
+}
+.productos-old .yogurt-mora .dec-2{
+    bottom: -30px;
+    right: -30px;
+}
+
+
+.productos-old .yogurt-frutos{
+    --product-color: #8F1F28;
+    background-color: hsl(355, 64%, 95%);
+    /* background-color: hsl(0, 100%, 95%);
+    border-color: darkred; */
+}
+
+.productos-old .yogurt-frutos .dec-1{
+    top:-0px;
+    right: -40px;
+}
+.productos-old .yogurt-frutos .dec-2{
+    bottom: -130px;
+    right: 30px;
+}
+
+.productos-old .yogurt-durazno{
+    --product-color: #C95A1E;
+    background-color: hsl(21, 74%, 93%);
+}
+
+.productos-old .yogurt-durazno .dec-1{
+    top: 60px;
+    right: -0px;
+}
+.productos-old .yogurt-durazno .dec-2{
+    bottom: -40px;
+    right: -50px;
+}
+
+.productos-old .yogurt-pinia{
+    --product-color:#9A8516;
+    background-color: hsl(51, 87%, 95%);
+}
+.productos-old .yogurt-pinia .col-1 img{
+    width: 700px;
+}
+
+.productos-old .yogurt-pinia .dec-1{
+    top: 50px;
+    right: -0px;
+}
+.productos-old .yogurt-pinia .dec-2{
+    bottom: -100px;
+    right: -50px;
+}
+
+.productos-old .yogurt-fresa{
+    --product-color: red;
+}
+
+
+
+
+
+.productos-old .yogurt-fresa .col-1 img{
+    width: 700px;
+}
+
+.productos-old .yogurt-fresa .dec-1{
+    top: 60px;
+    right: -0px;
+}
+.productos-old .yogurt-fresa .dec-2{
+    bottom: -60px;
+    right: -30px;
+}
+
+@media (max-width:830px){
+    .productos-old > div{
+        margin-bottom: 80px;
+        padding-top:0px;
+    }
+    .productos-old{
+        padding-top:0px;
+    }
+    .productos-old h3, .productos-old h4{
+        padding-left: 0em;
+        text-align: center;
+    }
+    .productos-old h3{
+        font-size:26px;
+    }
+    
+    .productos-old .col-1{
+        display: inline-block;
+        width: 100%;
+        vertical-align: top;
+        vertical-align: middle;
+        text-align: center;
+    }
+    .productos-old .col-1 img{
+        max-width: 100%;
+    }
+    .productos-old .col-2{
+        display: inline-block;
+        width: 100%;
+        vertical-align: middle;
+        padding: 1em;
+    }
+
+    .productos-old .dec-1, .productos-old .dec-2 {
+        display: none;
+    }
+}
+
+
+
+.productos{
+    background-color: #202020;
+    
+    padding: 180px 0;
+}
+.productos > h3{
+    font-size: 32px;
+    text-align: center;
+    color:#ddd;
+}
+
+.productos .grid{
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px ,1fr));
+    gap: 3em; */
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+    /* row-gap: 2em; */
+    /* padding: 2em; */
+    max-width: 1400px;
+    margin: 0 auto;
+    /* background-color: azure; */
+}
+.productos .second{
+    grid-template-columns: repeat(auto-fit, minmax(350px ,1fr));
+}
+.productos .grid > div{
+    flex: 0 0 375px;
+    background-color: #222;
+    background-color: #151515;
+    /* box-shadow: 0 0 100px rgba(0,0,0, .3); */
+    box-shadow: 0 10px 25px 5px rgba(0, 0, 0, 0.2);
+    margin: 1.5em;
+    
+    /* height: 600px; */
+    /* border-radius: 28px; */
+    position: relative;
+    overflow: hidden;
+    color: white;
+    border-radius: 12px;
+    transition: transform .4s ease;
+}
+@media screen and (min-width:500px){
+    .productos .grid > div:hover{
+        transform: scale(1.05);
+    }
+}
+
+
+.productos .grid > div img{
+    width: 115%;
+    filter:drop-shadow(2px 4px 5px rgba(0,0,0,0.3))
+}
+.productos .grid > div > div{
+    background-color: var(--product-color);
+    aspect-ratio: 1;
+    display: grid;
+    place-items: center;
+}
+.productos .grid h3{
+    font-size: 22px;
+    text-align: center;
+    padding: 1.5em 2em 2em 2em;
+}
+.productos .mora{
+    --product-color:hsl(207, 25%, 24%);
+    /* --product-color:hsl(207, 25%, 57%); */
+}
+.productos .frutos{
+    --product-color: hsl(355, 54%, 20%);
+    /* --product-color: hsl(355, 64%, 64%); */
+    /* --product-color: hsl(45, 11%, 31%); */
+}
+.productos .durazno{
+    --product-color: hsl(21, 74%, 60%);
+    --product-color: hsl(21, 74%, 30%);
+}
+.productos .pinia{
+    --product-color:hsl(50, 75%, 25%);
+   
+}
+.productos .fresa{
+    --product-color: hsl(0, 70%, 20%);
+}
+.productos .pinia-chile{
+    --product-color: hsl(27, 65%, 26%);
+}
+.productos .platano{
+    --product-color:hsl(53, 62%, 24%);
+}
+.productos .mango{
+    --product-color: hsl(14, 72%, 25%);
+}
+.productos .agua{
+    --product-color:hsl(90, 41%, 20%);
+}
+
+.productos-old .fruta-pinia{
+    --product-color: hsl(27, 85%, 40%);
+}
+.productos-old .fruta-fresa{
+    --product-color: hsl(0, 70%, 50%);
+}
+.productos-old .fruta-plat{
+    --product-color:hsl(53, 82%, 34%);
+}
+.productos-old .fruta-mango{
+    --product-color: hsl(14, 72%, 45%);
+}
+.productos-old .fruta-agua{
+    --product-color:hsl(90, 61%, 30%);
+}
+.productos-old .cecina-chil,
+.productos-old .cecina-hab,
+.productos-old .cecina-nat,
+.productos-old .cecina-pim
+{
+    --product-color:rgb(88, 59, 47);
+}
+
+.productos-old .guacamole{
+    --product-color:hsl(90, 71%, 25%);
+}
+.productos .chil{
+
+    --product-color:hsl(354, 65%, 18%);
+    /* --product-color:hsl(354, 65%, 82%); */
+}
+.productos .hab{
+    --product-color:hsl(30, 68%, 24%);
+}
+
+.productos .nat{
+    --product-color:hsl(43, 75%, 30%);
+}
+.productos .pim{
+    --product-color:hsl(37, 64%, 15%);
+}
+.productos .guaca{
+    --product-color:hsl(92, 52%, 15%);
+}
+.productos h5{
+    color:#ddd;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 18px;
+}
+.productos p{
+    color:#ddd;
+    max-width: 440px;
+    margin:0 auto;
+    text-align: justify;
+}
+@media screen and (max-width:500px) {
+    .productos .grid > div{
+        flex: 0 0 100%;
+        border-radius: 0;
+        margin:0;
+    }
+    .productos{
+        display: none;
+    }
+    .productos-old{
+        display: block !important;
+    }
+    .productos-old .col-2{
+        display: none;
+    }
+    .productos-old h5{
+        text-align: center;
+        font-size:18px;
+        color:#444;
+    }
+    .productos-old p{
+        padding:0 2em;
+        text-align: justify;
+    }
+}
+
+
+
