@@ -1,3 +1,6 @@
+
+<?php $version = "v0.0.1"; ?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -5,9 +8,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frixio</title>
-    <link rel="icon" type="image/x-icon" href="imgs/logos/favicon.svg">
-    <link rel="stylesheet" href="css/v0.6/main.css">
-    <script src="menu.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="public/<?php echo $version?>/imgs/logos/favicon.svg">
+    <link rel="stylesheet" href="public/<?php echo $version?>/css/landing/main.css">
+    <script src="public/<?php echo $version?>/js/menu.js" defer></script>
 </head>
 <body>
 
@@ -19,7 +22,7 @@
 
             <div class="logo-alivsa">
                 <div>
-                    <a href="#top"><img src="imgs/logos/alivsa.svg" alt=""></a>
+                    <a href="#top"><img src="public/<?php echo $version?>/imgs/logos/alivsa.svg" alt=""></a>
                     
                 </div>
             </div>
@@ -27,7 +30,7 @@
             <nav class="desk">
                 <a href="#nosotros">   <div class="item">NOSOTROS</div></a>
                 <a href="#liofilizado"><div class="item">LIOFILIZADO</div></a>
-                <div class="logo-frixio"><img src="imgs/logos/frixio.svg" alt=""></div>
+                <div class="logo-frixio"><img src="public/<?php echo $version?>/imgs/logos/frixio.svg" alt=""></div>
                 <a href="#productos">  <div class="item">PRODUCTOS</div></a>
                 <a href="#contacto">   <div class="item">CONTACTO</div></a>
             </nav>
@@ -53,7 +56,7 @@
             <div>
                 
                 <div class="logo-frixio-2">
-                    <img src="imgs/logos/frixio.svg" alt="">
+                    <img src="public/<?php echo $version?>/imgs/logos/frixio.svg" alt="">
                 </div>
                 <div class="name">
                     <div><div class="square"></div><h1>FRIXIO</h1></div>
@@ -62,7 +65,7 @@
                 <div><h2>¿QUIÉNES SOMOS?</h2></div>
                 <div class="fresas">
                     <div>
-                        <img src="imgs/otros/fresas-no-bg.png" alt="">
+                        <img src="public/<?php echo $version?>/imgs/otros/fresas-no-bg.png" alt="">
                     </div>
                 </div>
             </div>
@@ -145,7 +148,7 @@
             </div>
 
             <div class="cuchara">
-                <img src="imgs/otros/cuchara-fresas.png" alt="">
+                <img src="public/<?php echo $version?>/imgs/otros/cuchara-fresas.png" alt="">
             </div>
           
         </section>
@@ -160,7 +163,7 @@
                 </div>
                 <div class="fresas">
                     <div>
-                        <img src="imgs/otros/fresas-no-bg.png" alt="">
+                        <img src="public/<?php echo $version?>/imgs/otros/fresas-no-bg.png" alt="">
                     </div>
                 </div>
             </div>
@@ -195,7 +198,7 @@
                 </p>
                 <br><br><br>
                 <div class="center">
-                    <img class="platanos" src="imgs/otros/platanos.png" alt="">
+                    <img class="platanos" src="public/<?php echo $version?>/imgs/otros/platanos.png" alt="">
                     <p class="platanos-text">DESHIDRATADO VS LIOFILIZADO</p>
                 </div>
             </div>
@@ -259,8 +262,8 @@
 
         <section class="futuro green-section">
             <div class="center">
-                <img class="img-fondo-futuro" src="imgs/otros/fondo-futuro.png" alt="">
-                <img class="img-futuro" src="imgs/otros/futuro.png" alt="">
+                <img class="img-fondo-futuro" src="public/<?php echo $version?>/imgs/otros/fondo-futuro.png" alt="">
+                <img class="img-futuro" src="public/<?php echo $version?>/imgs/otros/futuro.png" alt="">
             </div>
         </section>
 
@@ -324,17 +327,17 @@
                     </p>
                 </ul>
 
-                <img class="img-planta" src="imgs/otros/planta.png" alt="">
-                <img class="img-planta-fresas" src="imgs/otros/planta-fresas.png" alt="">
-                <img class="img-woman" src="imgs/otros/woman.png" alt="">
+                <img class="img-planta" src="public/<?php echo $version?>/imgs/otros/planta.png" alt="">
+                <img class="img-planta-fresas" src="public/<?php echo $version?>/imgs/otros/planta-fresas.png" alt="">
+                <img class="img-woman" src="public/<?php echo $version?>/imgs/otros/woman.png" alt="">
             </div>
         </section>
 
 
         <section class="visible nuestros green-section">
             <div class="center">
-                <img class="img-fondo-futuro" src="imgs/otros/fondo-futuro.png" alt="">
-                <img class="img-nuestros" src="imgs/otros/nuestros.png" alt="">
+                <img class="img-fondo-futuro" src="public/<?php echo $version?>/imgs/otros/fondo-futuro.png" alt="">
+                <img class="img-nuestros" src="public/<?php echo $version?>/imgs/otros/nuestros.png" alt="">
             </div>
         </section>
 
@@ -365,7 +368,7 @@
                 <h3>MORA AZUL CON CEREALES. </h3>
                 <h4>YOGURT LIOFILIZADO</h4>
                 <div class="col-1">
-                    <img src="imgs/productos/yogurt/yogurt-mora.png" alt="">
+                    <img src="public/<?php echo $version?>/imgs/productos/yogurt/yogurt-mora.png" alt="">
                 </div><div class="col-2">
                     <b>DESCRIPCIÓN:</b>
                     <p>Yogurt cereales moras azules, nueces y probióticos</p>
@@ -405,15 +408,15 @@
                         Etiquetado de acuerdo a la NOM-051-SSA1-2020
                     </p>
                 </div>
-                <div class="dec-1"><img src="imgs/productos/mora-1.png" alt="" width="80px"></div>
-                <div class="dec-2"><img src="imgs/productos/mora-2.png" alt=""></div>
+                <div class="dec-1"><img src="public/<?php echo $version?>/imgs/productos/mora-1.png" alt="" width="80px"></div>
+                <div class="dec-2"><img src="public/<?php echo $version?>/imgs/productos/mora-2.png" alt=""></div>
             </div>
 
             <div class="producto yogurt-frutos">
                 <h3>FRUTOS ROJOS. </h3>
                 <h4>YOGURT LIOFILIZADO</h4>
                 <div class="col-1">
-                    <img src="imgs/productos/yogurt/yogurt-frutos.png" alt="">
+                    <img src="public/<?php echo $version?>/imgs/productos/yogurt/yogurt-frutos.png" alt="">
                 </div><div class="col-2">
                     <b>DESCRIPCIÓN:</b>
                     <p>Yogurt trozos de frutas rojas y probióticos.</p>
@@ -452,15 +455,15 @@
                         Etiquetado de acuerdo a la NOM-051-SSA1-2020
                     </p>
                 </div>
-                <div class="dec-1"><img src="imgs/productos/frutos-1.png" alt=""></div>
-                <div class="dec-2"><img src="imgs/productos/frutos-2.png" alt=""></div>
+                <div class="dec-1"><img src="public/<?php echo $version?>/imgs/productos/frutos-1.png" alt=""></div>
+                <div class="dec-2"><img src="public/<?php echo $version?>/imgs/productos/frutos-2.png" alt=""></div>
             </div>
 
             <div class="producto yogurt-durazno">
                 <h3>DURAZNO. </h3>
                 <h4>YOGURT LIOFILIZADO</h4>
                 <div class="col-1">
-                    <img src="imgs/productos/yogurt/yogurt-durazno.png" alt="">
+                    <img src="public/<?php echo $version?>/imgs/productos/yogurt/yogurt-durazno.png" alt="">
                 </div><div class="col-2">
                     <b>DESCRIPCIÓN:</b>
                     <p>Yogurt trozos de Durazno y probióticos.</p>
@@ -499,15 +502,15 @@
                         Etiquetado de acuerdo a la NOM-051-SSA1-2020
                     </p>
                 </div>
-                <div class="dec-1"><img src="imgs/productos/durazno-1.png" alt="" width="160px"></div>
-                <div class="dec-2"><img src="imgs/productos/durazno-2.png" alt="" width="300px"></div>
+                <div class="dec-1"><img src="public/<?php echo $version?>/imgs/productos/durazno-1.png" alt="" width="160px"></div>
+                <div class="dec-2"><img src="public/<?php echo $version?>/imgs/productos/durazno-2.png" alt="" width="300px"></div>
             </div>
 
             <div class="producto yogurt-pinia">
                 <h3>PIÑA - COCO. </h3>
                 <h4>YOGURT LIOFILIZADO</h4>
                 <div class="col-1">
-                    <img src="imgs/productos/yogurt/yogurt-pinia.png" alt="">
+                    <img src="public/<?php echo $version?>/imgs/productos/yogurt/yogurt-pinia.png" alt="">
                 </div><div class="col-2">
                     <b>DESCRIPCIÓN:</b>
                     <p>Yogurt trozos de piña y coco natural y probióticos.</p>
@@ -546,15 +549,15 @@
                         Etiquetado de acuerdo a la NOM-051-SSA1-2020
                     </p>
                 </div>
-                <div class="dec-1"><img src="imgs/productos/pinia-1.png" alt="" width="160px"></div>
-                <div class="dec-2"><img src="imgs/productos/pinia-2.png" alt="" width="300px"></div>
+                <div class="dec-1"><img src="public/<?php echo $version?>/imgs/productos/pinia-1.png" alt="" width="160px"></div>
+                <div class="dec-2"><img src="public/<?php echo $version?>/imgs/productos/pinia-2.png" alt="" width="300px"></div>
             </div>
 
             <div class="producto yogurt-fresa">
                 <h3>FRESA. </h3>
                 <h4>YOGURT LIOFILIZADO</h4>
                 <div class="col-1">
-                    <img src="imgs/productos/yogurt/yogurt-fresa.png" alt="">
+                    <img src="public/<?php echo $version?>/imgs/productos/yogurt/yogurt-fresa.png" alt="">
                 </div><div class="col-2">
                     <b>DESCRIPCIÓN:</b>
                     <p>Yogurt trozos de fresa natural y probióticos.</p>
@@ -593,43 +596,43 @@
                         Etiquetado de acuerdo a la NOM-051-SSA1-2020
                     </p>
                 </div>
-                <div class="dec-1"><img src="imgs/productos/fresa-1.png" alt="" width="160px"></div>
-                <div class="dec-2"><img src="imgs/productos/fresa-2.png" alt="" width="300px"></div>
+                <div class="dec-1"><img src="public/<?php echo $version?>/imgs/productos/fresa-1.png" alt="" width="160px"></div>
+                <div class="dec-2"><img src="public/<?php echo $version?>/imgs/productos/fresa-2.png" alt="" width="300px"></div>
             </div>
            <br><br><br><br><br><br>
             <div class="producto fruta-pinia">
                 <h3>PIÑA CON CHILE. </h3>
                 <h4>FRUTA LIOFILIZADA</h4>
                 <div class="col-1">
-                    <img src="imgs/productos/fruta/fruta-pinia.png" alt="">
+                    <img src="public/<?php echo $version?>/imgs/productos/fruta/fruta-pinia.png" alt="">
                 </div>
             </div>
             <div class="producto fruta-fresa">
                 <h3>FRESA. </h3>
                 <h4>FRUTA LIOFILIZADA</h4>
                 <div class="col-1">
-                    <img src="imgs/productos/fruta/fruta-fresa.png" alt="">
+                    <img src="public/<?php echo $version?>/imgs/productos/fruta/fruta-fresa.png" alt="">
                 </div>
             </div>
             <div class="producto fruta-plat">
                 <h3>PLATANO. </h3>
                 <h4>FRUTA LIOFILIZADA</h4>
                 <div class="col-1">
-                    <img src="imgs/productos/fruta/fruta-platano.png" alt="">
+                    <img src="public/<?php echo $version?>/imgs/productos/fruta/fruta-platano.png" alt="">
                 </div>
             </div>
             <div class="producto fruta-mango">
                 <h3>MANGO. </h3>
                 <h4>FRUTA LIOFILIZADA</h4>
                 <div class="col-1">
-                    <img src="imgs/productos/fruta/fruta-mango.png" alt="">
+                    <img src="public/<?php echo $version?>/imgs/productos/fruta/fruta-mango.png" alt="">
                 </div>
             </div>
             <div class="producto fruta-agua">
                 <h3>AGUACATE. </h3>
                 <h4>FRUTA LIOFILIZADA</h4>
                 <div class="col-1">
-                    <img src="imgs/productos/fruta/fruta-agua.png" alt="">
+                    <img src="public/<?php echo $version?>/imgs/productos/fruta/fruta-agua.png" alt="">
                 </div>
             </div>
 
@@ -639,35 +642,35 @@
                 <h3>CHILTEPIN. </h3>
                 <h4>CECINA</h4>
                 <div class="col-1">
-                    <img src="imgs/productos/cecina/chiltepin.png" alt="">
+                    <img src="public/<?php echo $version?>/imgs/productos/cecina/chiltepin.png" alt="">
                 </div>
             </div>
             <div class="producto cecina-hab">
                 <h3>HABANERO. </h3>
                 <h4>CECINA</h4>
                 <div class="col-1">
-                    <img src="imgs/productos/cecina/habanero.png" alt="">
+                    <img src="public/<?php echo $version?>/imgs/productos/cecina/habanero.png" alt="">
                 </div>
             </div>
             <div class="producto cecina-nat">
                 <h3>NATURAL. </h3>
                 <h4>CECINA</h4>
                 <div class="col-1">
-                    <img src="imgs/productos/cecina/natural.png" alt="">
+                    <img src="public/<?php echo $version?>/imgs/productos/cecina/natural.png" alt="">
                 </div>
             </div>
             <div class="producto cecina-pim">
                 <h3>PIMIENTA. </h3>
                 <h4>CECINA</h4>
                 <div class="col-1">
-                    <img src="imgs/productos/cecina/pimienta.png" alt="">
+                    <img src="public/<?php echo $version?>/imgs/productos/cecina/pimienta.png" alt="">
                 </div>
             </div>
             <br><br><br><br><br><br>
             <div class="producto guacamole">
                 <h3>GUACAMOLE LIOFILIZADO. </h3>
                 <div class="col-1">
-                    <img src="imgs/productos/guacamole.png" alt="">
+                    <img src="public/<?php echo $version?>/imgs/productos/guacamole.png" alt="">
                 </div>
             </div>
         </section>
@@ -698,21 +701,21 @@
 
                 <div class="mora">
                     <div>
-                        <img src="imgs/productos/yogurt/yogurt-mora.png" alt="">
+                        <img src="public/<?php echo $version?>/imgs/productos/yogurt/yogurt-mora.png" alt="">
                     </div>
                     <h3 style="color:hsl(207, 65%, 89%);"> MORA AZUL CON CEREALES </h3>
                 </div>
 
                 <div class="frutos">
                     <div>
-                        <img src="imgs/productos/yogurt/yogurt-frutos.png" alt="">
+                        <img src="public/<?php echo $version?>/imgs/productos/yogurt/yogurt-frutos.png" alt="">
                     </div>
                     <h3 style="color:hsl(355, 74%, 86%);"> FRUTOS ROJOS</h3>
                 </div>
 
                 <div class="durazno">
                     <div>
-                        <img src="imgs/productos/yogurt/yogurt-durazno.png" alt="">
+                        <img src="public/<?php echo $version?>/imgs/productos/yogurt/yogurt-durazno.png" alt="">
                     </div>
                     <h3 style="color:hsl(21, 74%, 80%);"> DURAZNO</h3>
                 </div>
@@ -720,14 +723,14 @@
 
                 <div class="pinia">
                     <div>
-                        <img src="imgs/productos/yogurt/yogurt-pinia.png" alt="">
+                        <img src="public/<?php echo $version?>/imgs/productos/yogurt/yogurt-pinia.png" alt="">
                     </div>
                     <h3 style="color:hsl(50, 75%, 85%);"> PIÑA - COCO</h3>
                 </div>
 
                 <div class="fresa">
                     <div>
-                        <img src="imgs/productos/yogurt/yogurt-fresa.png" alt="">
+                        <img src="public/<?php echo $version?>/imgs/productos/yogurt/yogurt-fresa.png" alt="">
                     </div>
                     <h3 style="color:hsl(0, 80%, 85%);"> FRESA</h3>
                 </div>
@@ -739,21 +742,21 @@
 
                 <div class="pinia-chile">
                     <div>
-                        <img src="imgs/productos/fruta/fruta-pinia.png" alt="">
+                        <img src="public/<?php echo $version?>/imgs/productos/fruta/fruta-pinia.png" alt="">
                     </div>
                     <h3 style="color:hsl(27, 85%, 86%)"> PIÑA CON CHILE </h3>
                 </div>
 
                 <div class="fresa">
                     <div>
-                        <img src="imgs/productos/fruta/fruta-fresa.png" alt="">
+                        <img src="public/<?php echo $version?>/imgs/productos/fruta/fruta-fresa.png" alt="">
                     </div>
                     <h3 style="color:hsl(355, 74%, 86%);"> FRESA</h3>
                 </div>
 
                 <div class="platano">
                     <div>
-                        <img src="imgs/productos/fruta/fruta-platano.png" alt="">
+                        <img src="public/<?php echo $version?>/imgs/productos/fruta/fruta-platano.png" alt="">
                     </div>
                     <h3 style="color:hsl(53, 62%, 84%);"> PLATANO</h3>
                 </div>
@@ -761,14 +764,14 @@
 
                 <div class="mango">
                     <div>
-                        <img src="imgs/productos/fruta/fruta-mango.png" alt="">
+                        <img src="public/<?php echo $version?>/imgs/productos/fruta/fruta-mango.png" alt="">
                     </div>
                     <h3 style="color:hsl(14, 72%, 85%)"> MANGO</h3>
                 </div>
 
                 <div class="agua">
                     <div>
-                        <img src="imgs/productos/fruta/fruta-agua.png" alt="">
+                        <img src="public/<?php echo $version?>/imgs/productos/fruta/fruta-agua.png" alt="">
                     </div>
                     <h3 style="color:hsl(90, 41%, 80%);">AGUACATATE</h3>
                 </div>
@@ -783,14 +786,14 @@
 
                 <div class="chil">
                     <div>
-                        <img src="imgs/productos/cecina/chiltepin.png" alt="">
+                        <img src="public/<?php echo $version?>/imgs/productos/cecina/chiltepin.png" alt="">
                     </div>
                     <h3 style="color:hsl(354, 65%, 88%)"> CHILTEPIN</h3>
                 </div>
 
                 <div class="hab">
                     <div>
-                        <img src="imgs/productos/cecina/habanero.png" alt="">
+                        <img src="public/<?php echo $version?>/imgs/productos/cecina/habanero.png" alt="">
                     </div>
                     <h3 style="color:hsl(30, 68%, 84%);"> HABANERO</h3>
                 </div>
@@ -798,14 +801,14 @@
 
                 <div class="nat">
                     <div>
-                        <img src="imgs/productos/cecina/natural.png" alt="">
+                        <img src="public/<?php echo $version?>/imgs/productos/cecina/natural.png" alt="">
                     </div>
                     <h3 style="color:hsl(43, 75%, 85%)"> NATURAL</h3>
                 </div>
 
                 <div class="pim">
                     <div>
-                        <img src="imgs/productos/cecina/pimienta.png" alt="">
+                        <img src="public/<?php echo $version?>/imgs/productos/cecina/pimienta.png" alt="">
                     </div>
                     <h3 style="color:hsl(37, 64%, 85%);">PIMIENTA</h3>
                 </div>
@@ -818,7 +821,7 @@
             <div class="grid">
                 <div class="guaca">
                     <div>
-                        <img src="imgs/productos/guacamole.png" alt="">
+                        <img src="public/<?php echo $version?>/imgs/productos/guacamole.png" alt="">
                     </div>
                 </div>
             </div>
@@ -831,8 +834,8 @@
                 <div class="top-decoration"></div>
                 <div class="bot-decoration"></div>
                 <div class="logos">
-                    <img class="alivsa" src="imgs/logos/alivsa.svg" alt="">
-                    <img class="frixio" src="imgs/logos/frixio-blanco.svg" alt="">
+                    <img class="alivsa" src="public/<?php echo $version?>/imgs/logos/alivsa.svg" alt="">
+                    <img class="frixio" src="public/<?php echo $version?>/imgs/logos/frixio-blanco.svg" alt="">
                 </div>
                 <br><br><br><br>
                 <b>CONTACTO</b>
@@ -851,16 +854,16 @@
                 <p>RFC: CAL1502287U2</p>
                 <br><br><br>
                 <div class="links">
-                    <img src="imgs/logos/whats.svg" alt="">
+                    <img src="public/<?php echo $version?>/imgs/logos/whats.svg" alt="">
                     <a href="https://wa.me/3781104871">3781104871</a> / 
                     <a href="https://wa.me/3331291143">3331291143</a>
                 </div>
                 <br><br>
                 <div class="links">
                     
-                    <a href=""><img src="imgs/logos/facebook.svg" alt=""><span>Frixio Liofilizados</span></a>
-                    <a href=""><img src="imgs/logos/instagram.svg" alt=""><span>@frixiomx</span></a>
-                    <a href=""><img src="imgs/logos/twitter.svg" alt=""><span>@frixioalivs</span></a>
+                    <a href=""><img src="public/<?php echo $version?>/imgs/logos/facebook.svg" alt=""><span>Frixio Liofilizados</span></a>
+                    <a href=""><img src="public/<?php echo $version?>/imgs/logos/instagram.svg" alt=""><span>@frixiomx</span></a>
+                    <a href=""><img src="public/<?php echo $version?>/imgs/logos/twitter.svg" alt=""><span>@frixioalivs</span></a>
                 </div>
                 <br><br><br>
             </div>
