@@ -14,7 +14,7 @@
         <br>
         <button>Procesar</button>
         <div id="output">
-            Procesando...
+            Procesando....
         </div>
     </main>
     
