@@ -1,5 +1,5 @@
 
-<?php $version = "v0.0.1"; ?>
+<?php include("version.php") ?>
 
 <!DOCTYPE html>
 <html lang="es">
