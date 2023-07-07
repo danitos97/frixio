@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frixio</title>
-    <link rel="icon" type="image/x-icon" href="public/<?php echo $version?>/imgs/logos/favicon.svg">
+    <link rel="icon" type="image/x-icon" href="favicon.svg">
     <link rel="stylesheet" href="public/<?php echo $version?>/css/landing/main.css">
     <script src="public/<?php echo $version?>/js/menu.js" defer></script>
 </head>

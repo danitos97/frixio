@@ -4,7 +4,7 @@ include "connection.php";
 
 $user = [
    "card" => "4111111111111111",
-   "exp"  => "1219",
+   "exp"  => "1223",
    "code" => "111"
 ];
 
@@ -26,10 +26,10 @@ $data = [
     //STATUS_3D
 ];
 
-// send(200,$data);
 
-$url = "https://via.pagosbanorte.com/payw2";
+
 $url = "https://via.banorte.com/payw2";
+$url = "https://via.pagosbanorte.com/payw2";
 
 $res = postRequest($url,$data);
 // $res = callAPI("POST",$url,$data);
@@ -46,7 +46,8 @@ function postRequest($url,$data){
    curl_setopt($curl, CURLOPT_HEADER, 1);
    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
    curl_setopt($curl, CURLOPT_POST, 1);
-   curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
+   curl_setopt($curl, CURLOPT_POSTFIELDS,http_build_query($data));
+   // curl_setopt($curl, CURLOPT_POSTFIELDS,$data);
    curl_setopt($curl, CURLOPT_CONNECTTIMEOUT,60);
    curl_setopt($curl, CURLOPT_TIMEOUT,60);
 
