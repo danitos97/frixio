@@ -1,10 +1,31 @@
+import Server from "./Server.js";
+
 const btnProcesar = $("button");
+
+const inputCard = $("#frixio-card");
+const inputExp = $("#frixio-exp");
+const inputCode = $("#frixio-code");
+
 const output = $("#output");
 
-btnProcesar.on("click",async function(){
-    const call = await fetch("../server/payworks.php");
-    const res = await call.json();
+btnProcesar.on("click",async function(e){
+    e.preventDefault();
+    const data = {
+        card: inputCard.value,
+        exp:  inputExp.value,
+        code: inputCode.value
+    };
+    const res = await Server.pay(data);
     console.log(res);
-    output.innerHTML = res.data.replaceAll("\r\n","<br>");
+    if(res.status == 200)
+        output.innerHTML = res.data.replaceAll("\r\n","<br>");
+});
+
+const btnLogout = $("#logout");
+
+btnLogout.on("click", async function(){
+    const res = await Server.logout();
+    if(res.status == 200)
+        location.href = "login/";
 });
 

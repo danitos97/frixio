@@ -1,0 +1,9 @@
+:root{
+    --header-color: #d3d3d3;
+    --main-color: #007940;
+    --secondary-color: #7eba2c;
+    --third-color: #00615c;
+    --scroll-color: var(--third-color);
+    --light-gray: #e3e3e2;
+    --section-green: #14482A;
+}

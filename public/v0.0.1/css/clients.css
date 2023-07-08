@@ -1,3 +1,5 @@
+@import "colors.css";
+
 *{
     margin:0;
     padding:0;
@@ -5,12 +7,13 @@
     box-sizing: border-box;
     font-family:Arial;
 }
+.center{
+    text-align: center;
+}
 main{
     position:fixed;
     width: 100%;
     height: 100%;
-    display: grid;
-    place-items: center;
     background-color: #ccc;
 }
 button{
@@ -23,12 +26,60 @@ button{
 button:hover{
     background-color: hsl(120, 100%, 25%);
 }
+
+
+header{
+    background-color: var(--main-color);
+    /* height: 60px; */
+    color:white;
+    font-weight: bolder;
+    padding:1em 2em;
+    text-align: right;
+}
+#logout{
+    display:inline-block;
+}
+#logout:hover{
+    cursor: pointer;
+}
+
+section{
+    padding-top: 60px;
+}
+section > *{
+    display: inline-block;
+    vertical-align: middle;
+}
+input{
+    padding: .5em 0em .3em 0;
+    font-size: 20px;
+    width: 200px;
+    border: 0 solid gray;
+    border-bottom-width: 1px;
+    text-align: center;
+}
+input:focus{
+    outline: none;
+}
+form{
+    background-color: white;
+    display: inline-block;
+    text-align: center;
+    padding: 1em 2em;
+    margin: 30px 0;
+    margin-right: 60px;
+}
+label{
+    font-size: 18px;
+}
 #output{
     border: 1px solid black;
-    height: 400px;
-    width: 800px;
+    height: 470px;
+    width: 1100px;
     background-color: #222;
     color:white;
     padding:1em;
     overflow-y: auto;
+    display: inline-block;
+    text-align: left;
 }
