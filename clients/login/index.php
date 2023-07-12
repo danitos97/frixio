@@ -14,7 +14,7 @@ include "../../version.php";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FRIXIO - Iniciar Sesión</title>
     <link rel="icon" type="image/x-icon" href="../../favicon.svg">
     <link rel="stylesheet" href="../../public/<?php echo $version?>/css/clients/login.css">
 </head>
