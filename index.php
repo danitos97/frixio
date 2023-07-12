@@ -6,10 +6,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Frixio - Alimentos liofilizados">
+    <meta name="description" content="Compra productos alimenticios liofilizados por mayoreo al mejor precio">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frixio</title>
-    <link rel="canonical" href="https://frixio.com.mx" />
+    <title>Frixio - Alimentos liofilizados</title>
+    <link rel="canonical" href="https://www.frixio.com.mx" />
     <link rel="icon" type="image/x-icon" href="favicon.svg">
     <link rel="stylesheet" href="public/<?php echo $version?>/css/landing/main.css">
     <script src="public/<?php echo $version?>/js/menu.js" defer></script>
