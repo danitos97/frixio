@@ -15,7 +15,6 @@ $data = [
    "TERMINAL_ID"    => getenv("PAYWORKS_MERCHANT_ID")."1", // ?????
    "AMOUNT"         => "1",
    "MODE"           => "AUT",
-   // "REFERENCE"      => "FRIXIO_0001",
    "CARD_NUMBER"    => $user["card"],
    "CARD_EXP"       => $user["exp"],
    "SECURITY_CODE"  => $user["code"],
@@ -28,6 +27,13 @@ $data = [
 
 
 // send(200,$data);
+
+// $secure3D = "https://via.banorte.com/secure3d/Solucion3DSecure.htm";
+
+// $res = postRequest($secure3D);
+
+// send(200, $res);
+
 $url = "https://via.pagosbanorte.com/payw2";
 $url = "https://via.banorte.com/payw2";
 
@@ -38,13 +44,14 @@ send(200, $res);
 
 
 
-function postRequest($url,$data){
+function postRequest($url,$data = false){
    $curl = curl_init($url);
    curl_setopt($curl, CURLOPT_VERBOSE,true);
    curl_setopt($curl, CURLOPT_HEADER, 1);
    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
    curl_setopt($curl, CURLOPT_POST, 1);
-   curl_setopt($curl, CURLOPT_POSTFIELDS,http_build_query($data));
+   if($data)
+      curl_setopt($curl, CURLOPT_POSTFIELDS,http_build_query($data));
    curl_setopt($curl, CURLOPT_CONNECTTIMEOUT,60);
    curl_setopt($curl, CURLOPT_TIMEOUT,60);
 

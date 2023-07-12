@@ -27,17 +27,13 @@ switch($option){
         if($row["active"] == 0 || !password_verify($pass, $row["pass"]))
             send(401);
 
-        $id = $row["id"];
-        $rol = $row["row"];
 
-        $_SESSION["frixio-user"] = ["id" => $id, "rol" => $rol];
+        $_SESSION["frixio-user"] = [
+            "id" => $row["id"], 
+            "name"=> $row["name"],
+            "rol" => $row["rol"]
+        ];
 
-        send(200, $rol);
-
-
-    case "logout":
-
-        unset($_SESSION["frixio-user"]);
         send();
 
 

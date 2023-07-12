@@ -16,11 +16,11 @@ include "../../version.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="icon" type="image/x-icon" href="../../favicon.svg">
-    <link rel="stylesheet" href="../../public/<?php echo $version?>/css/login.css">
+    <link rel="stylesheet" href="../../public/<?php echo $version?>/css/clients/login.css">
 </head>
 <body>
     <script src="../../public/<?php echo $version?>/js/dQuery.js" defer></script>
-    <script src="../../public/<?php echo $version?>/js/login.js" defer type="module"></script>
+    <script src="../../public/<?php echo $version?>/js/clients/login.js" defer type="module"></script>
     <main>
         <div>
 

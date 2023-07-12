@@ -1,6 +1,6 @@
 export default class Server{
 
-    static relativeURL = "../";
+    static relativeURL = "../../";
 
 
     static async login(user, pass){

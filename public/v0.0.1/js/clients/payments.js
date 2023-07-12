@@ -1,4 +1,4 @@
-import Server from "./Server.js";
+import Server from "../Server.js";
 
 const btnProcesar = $("button");
 
@@ -21,11 +21,5 @@ btnProcesar.on("click",async function(e){
         output.innerHTML = res.data.replaceAll("\r\n","<br>");
 });
 
-const btnLogout = $("#logout");
 
-btnLogout.on("click", async function(){
-    const res = await Server.logout();
-    if(res.status == 200)
-        location.href = "login/";
-});
 

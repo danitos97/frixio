@@ -1,11 +1,8 @@
-import Server from "./Server.js";
-
-Server.relativeURL = "../../";
+import Server from "../Server.js";
 
 const btnIngresar = $("button");
 const inputUser = $("#frixio-user");
 const inputPass = $("#frixio-pass");
-
 
 btnIngresar.on("click",async function(e){
     const user = inputUser.value;

@@ -855,8 +855,8 @@
                 <br><br><br>
                 <div class="links">
                     <img src="public/<?php echo $version?>/imgs/logos/whats.svg" alt="">
-                    <a href="https://wa.me/3781104871">3781104871</a> / 
-                    <a href="https://wa.me/3331291143">3331291143</a>
+                    <a>3781104871</a> / 
+                    <a>3331291143</a>
                 </div>
                 <br><br>
                 <div class="links">

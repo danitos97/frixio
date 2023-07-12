@@ -1,0 +1,95 @@
+@import "../colors.css";
+
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    box-sizing: border-box;
+    font-family:Arial;
+}
+a{
+    text-decoration: none;
+    color:inherit;
+}
+.center{
+    text-align: center;
+}
+header{
+    background-color: var(--main-color);
+    background-color: var(--third-color);
+    color:white;
+    font-weight: bolder;
+    padding:.3em 2em;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+.logo{
+    font-weight: bold;
+    font-size: 28px;
+    transform: translateY(30%);
+    letter-spacing: .1em;
+}
+main{
+    min-height: 100vh;
+    background-color: #111;
+    /* background-color: #34252F; */
+}
+#logout{
+    display:inline-block;
+}
+#logout:hover{
+    cursor: pointer;
+}
+
+
+.user-menu{
+    padding:1em;
+    border: 1px solid transparent;
+}
+.user-menu:hover{
+    border-color: white;
+    cursor:default;
+}
+
+.user-menu > *{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top:6px solid #ccc;
+}
+
+
+.user-menu-div{
+    height: 0;
+    overflow: hidden;
+    width: 200px;
+    position: absolute;
+    top:58px;
+    right: 0;
+    color:white;
+    transition: height .4s ease;
+    background-color: var(--third-color);;
+}
+.user-menu:hover .user-menu-div{
+    height: 96px;
+}
+.user-menu-div  div{
+    padding:1em;
+    border: 0 solid gray;
+    border-bottom-width: 1px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.user-menu-div  > *:first-child{
+    margin-top:6px;
+}
+.user-menu-div  div:hover{
+    background-color: hsl(177, 100%, 24%);
+    cursor:pointer;
+}
