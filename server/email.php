@@ -25,7 +25,7 @@ try{
     $mail->Port       = 465;      
     
     $mail->setFrom(getenv("SMTP_USER"), 'FRIXIO');    //Add a recipient
-    $mail->addAddress('daniel_doni@hotmail.com');               //Name is optional
+    $mail->addAddress('test-24wlgv7dj@srv1.mail-tester.com');               //Name is optional
 
     $mail->isHTML(true);                                  //Set email format to HTML
     $mail->Subject = 'Here is the subject';
