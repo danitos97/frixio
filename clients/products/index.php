@@ -26,7 +26,18 @@ include "../../version.php";
 
         <?php include "../header.php" ?>
 
-       
+        <section class="center">
+        
+            <form action="">
+                <input id="email" type="text" placeholder="Email" required><br><br>
+                <button class="center">
+                    <span>Enviar</span>
+                    <div class="spinner"></div>
+                </button>
+                <br><br>
+                <span id="success">Correo Enviado</span>
+            </form>
+        </section>
         
     </main>
     

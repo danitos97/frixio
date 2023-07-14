@@ -16,6 +16,10 @@ export default class Server{
         return await Server.#post("pay",data);
     }
 
+    static async sendMail(email){
+        return await Server.#post("sendMail", {to: email});
+    }
+
     static async #post(option,data){
         const body = new FormData();
         body.append("option",option)
@@ -26,4 +30,5 @@ export default class Server{
         return await call.json();
     }
 
+   
 }

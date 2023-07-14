@@ -7,3 +7,19 @@
     --light-gray: #e3e3e2;
     --section-green: #14482A;
 }
+
+.spinner{
+    width: 24px;
+    height: 24px;
+    animation: spinn 1s linear infinite;
+    border-radius: 50%;
+    border:5px solid white;
+    border-top-color: transparent;
+    display: inline-block;
+}
+.center{
+    text-align: center;
+}
+@keyframes spinn {
+    to{transform: rotate(360deg)}
+}

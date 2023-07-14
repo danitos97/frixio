@@ -1,5 +1,6 @@
 <?php 
 
+defined('tasks') || die('Direct access not permitted');
 
 $user = [
    "card" => safePOST("card"),

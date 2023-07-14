@@ -1,8 +1,10 @@
 <?php 
 
-session_start();
+defined('tasks') || die('Direct access not permitted');
 
-if(!isset($_SESSION["frixio-user"])) exit;
+$to = safePOST("to");
+
+if(!$to) send(400);
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
@@ -16,26 +18,28 @@ require 'PHPMailer/src/SMTP.php';
 $mail = new PHPMailer(true);
 
 try{
-    $mail->isSMTP();                                            //Send using SMTP
-    $mail->Host       = 'smtp.hostinger.com';                     //Set the SMTP server to send through
-    $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = getenv("SMTP_USER");           //SMTP username
-    $mail->Password   = getenv("SMTP_PASS");                               //SMTP password
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
-    $mail->Port       = 465;      
+    $mail -> isSMTP();                                            //Send using SMTP
+    $mail -> Host       = 'smtp.hostinger.com';                     //Set the SMTP server to send through
+    $mail -> SMTPAuth   = true;                                   //Enable SMTP authentication
+    $mail -> Username   = getenv("SMTP_USER");           //SMTP username
+    $mail -> Password   = getenv("SMTP_PASS");                               //SMTP password
+    $mail -> SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
+    $mail -> Port       = getenv("SMTP_PORT");      
     
-    $mail->setFrom(getenv("SMTP_USER"), 'FRIXIO');    //Add a recipient
-    $mail->addAddress('test-24wlgv7dj@srv1.mail-tester.com');               //Name is optional
+    $mail -> setFrom(getenv("SMTP_USER"), 'FRIXIO');    //Add a recipient
+    $mail -> addAddress($to);               //Name is optional
 
-    $mail->isHTML(true);                                  //Set email format to HTML
-    $mail->Subject = 'Here is the subject';
-    $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
-    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+    $mail -> isHTML(true);                                  //Set email format to HTML
+    $mail -> Subject = 'Here is the subject';
+    $mail -> Body    = 'This is the HTML message body <b>in bold!</b>';
+    $mail -> AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
-    echo 'Message has been sent';
+
+    send();
+
 } catch (Exception $e) {
-    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    send(500, "Message could not be sent. Mailer Error: {$mail->ErrorInfo}");
 }
 
 ?> 

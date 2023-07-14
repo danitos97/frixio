@@ -2,6 +2,8 @@
 
 session_start();
 
+define("tasks", true);
+
 include "connection.php";
 
 $option = safePOST("option");
@@ -39,6 +41,10 @@ switch($option){
 
     case "pay":
         include "payworks.php";
+
+
+    case "sendMail":
+        include "email.php";
         
 }
 
