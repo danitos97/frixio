@@ -14,27 +14,30 @@ use PHPMailer\PHPMailer\Exception;
 require 'PHPMailer/src/Exception.php';
 require 'PHPMailer/src/PHPMailer.php';
 require 'PHPMailer/src/SMTP.php';
+require 'templates/recovery.php';
 
 $mail = new PHPMailer(true);
 
 try{
-    $mail -> isSMTP();                                            //Send using SMTP
-    $mail -> Host       = 'smtp.hostinger.com';                     //Set the SMTP server to send through
-    $mail -> SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail -> Username   = getenv("SMTP_USER");           //SMTP username
-    $mail -> Password   = getenv("SMTP_PASS");                               //SMTP password
-    $mail -> SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
+    $mail -> isSMTP();                                          
+    $mail -> Host       = 'smtp.hostinger.com';                    
+    $mail -> SMTPAuth   = true;                               
+    $mail -> Username   = getenv("SMTP_USER");        
+    $mail -> Password   = getenv("SMTP_PASS");                    
+    $mail -> SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;      
     $mail -> Port       = getenv("SMTP_PORT");      
     
-    $mail -> setFrom(getenv("SMTP_USER"), 'FRIXIO');    //Add a recipient
-    $mail -> addAddress($to);               //Name is optional
+    $mail -> setFrom(getenv("SMTP_USER"), 'FRIXIO');   
+    $mail -> addAddress($to);            
 
-    $mail -> isHTML(true);                                  //Set email format to HTML
-    $mail -> Subject = 'Here is the subject';
-    $mail -> Body    = 'This is the HTML message body <b>in bold!</b>';
-    $mail -> AltBody = 'This is the body in plain text for non-HTML mail clients';
+    $mail -> isHTML(true);                                 
+    $mail -> Subject = 'Restablecer contraseña';
+    $mail -> Body    = recoveryTemplate("Daniel Rivera", "https://www.frixio.com.mx/");
+    $mail -> AltBody = 'Favor de visualizar este correo en otro gestor de correos';
 
-    $mail->send();
+    $mail -> CharSet = 'UTF-8';
+
+    $mail -> send();
 
     send();
 

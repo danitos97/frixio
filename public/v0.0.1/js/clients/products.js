@@ -27,6 +27,4 @@ btnEnviar.on("click",async function(e){
     inputEmail.value = "";
     btnEnviar.classList.remove("disabled");
 
-    
-    
 });

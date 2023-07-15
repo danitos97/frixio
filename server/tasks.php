@@ -31,9 +31,9 @@ switch($option){
 
 
         $_SESSION["frixio-user"] = [
-            "id" => $row["id"], 
-            "name"=> $row["name"],
-            "rol" => $row["rol"]
+            "id"   => $row["id"], 
+            "name" => $row["name"],
+            "rol"  => $row["rol"]
         ];
 
         send();
