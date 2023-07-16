@@ -144,11 +144,20 @@ button:not(.disabled,.used):hover{
     width: 0;
     background-color: white;
     /* background-color: rgb(204, 226, 197); */
-    transition: height 1s ease, max-width 1s ease;
+    transition: height .8s ease, transform .8s ease;
     overflow: hidden;
     max-width: 0;
     display: inline;
+    opacity: 0; width: 100%;
+    max-width: 1000px;
+    transform: scaleX(0);
 }
+.recovery.visible{
+    transform: scaleX(1);
+    height: 190px;
+   
+    opacity: 1;
+ }
 .recovery button{
     width: auto;
     /* padding: 0 1em; */
@@ -181,7 +190,10 @@ button:not(.disabled,.used):hover{
     padding-top: 0em;
     background-color: transparent;
     text-align: center;
+    width: 600px;
+    margin: 0 auto;
 }
+
 .recovery form > div > *{
     display: inline-block;
     vertical-align: middle;
