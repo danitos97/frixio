@@ -40,12 +40,41 @@ switch($option){
 
 
     case "pay":
+        checkSession();
         include "payworks.php";
 
 
-    case "sendMail":
-        include "email.php";
+    case "recoveryMail":
         
+
+        $to = safePOST("to");
+        if(!$to) send(401);
+
+
+        $user = getAllFromTable("users","email='$to'");
+        if(!$user) send(401);
+
+        include "email.php";
+        include 'templates/recovery.php';
+
+        $subject = "Restablecer Contraseña";
+
+        $name = $user[0]["name"];
+        $link = getenv("URL")."clients/recovery?key=123456789";
+
+        $body = recoveryTemplate($name, $link);
+
+        $mail = sendMail($to, $subject, $body);
+                
+        send();
+        
+        
+        
+}
+
+function checkSession(){
+    if(!isset($_SESSION["frixio-user"]))
+        send(401);
 }
 
 ?>

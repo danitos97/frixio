@@ -16,8 +16,9 @@ export default class Server{
         return await Server.#post("pay",data);
     }
 
-    static async sendMail(email){
-        return await Server.#post("sendMail", {to: email});
+
+    static async recoveryMail(email){
+        return await Server.#post("recoveryMail", {to: email});
     }
 
     static async #post(option,data){

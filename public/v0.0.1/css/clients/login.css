@@ -19,17 +19,22 @@ main{
     display: grid;
     place-items: center;
     background-color: var(--main-color);
+    grid-template-rows: 1fr auto;
+    padding-bottom: 3em;
 }
 main > div{
     
     
     display: grid;
+
     grid-template-columns: 500px 500px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    box-shadow: 
+        rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, 
+        rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 form{
     background-color: white;
-    padding: 5em 2em;
+    padding: 5em 2em 4em 2em;
 }
 
 h2{
@@ -69,25 +74,50 @@ input:focus{
     width: 20px;
     fill: var(--main-color);
 }
-.recuperar{
+.recovery-btn{
     margin-top: .5em;
     color:hsl(152, 100%, 14%);
     font-size: 14px;
+    display: inline-block;
+}
+.recovery-btn:hover{
+    cursor:pointer;
+    text-decoration: underline;
 }
 button{
     width: 100%;
     background-color: hsl(152, 100%, 19%);
     color:white;
-    padding:.8em 0;
+   
     font-size: 18px;
     border-radius: 8px ;
     font-weight: bolder;
+    height: 50px;
 }
-button:hover{
+button .spinner{
+    display: none;
+}
+button.disabled, button.used{
+    background-color: hsl(152, 20%, 29%);;
+}
+button.disabled .spinner{
+    display:inline-block
+}   
+button.disabled span{
+    display: none;
+}
+button:not(.disabled,.used):hover{
     cursor: pointer;
     background-color: hsl(152, 100%, 24%);
 }
-
+.error{
+    color:transparent;
+    font-weight: bolder;
+    font-size:14px;
+}
+.error.visible{
+    color: darkred;
+}
 .img-container{
     position: relative;
     overflow: hidden;
@@ -107,4 +137,63 @@ button:hover{
 }
 .logo{
     margin-top: -20px;
+}
+
+.recovery{
+    height: 0;
+    width: 0;
+    background-color: white;
+    /* background-color: rgb(204, 226, 197); */
+    transition: height 1s ease, max-width 1s ease;
+    overflow: hidden;
+    max-width: 0;
+    display: inline;
+}
+.recovery button{
+    width: auto;
+    /* padding: 0 1em; */
+    border-radius: 0 8px 8px 0;
+    border:0px solid hsl(152, 100%, 19%);
+    width: 160px;
+}
+.recovery button svg{
+    fill:white;
+    width: 24px;
+    display: none;
+}
+
+.recovery button.used svg{
+    display: inline;
+    margin-top: 3px;
+}
+.recovery button.used span{
+    display:none;
+}
+
+.recovery.visible{
+   
+   height: 190px;
+   width: 100%;
+   max-width: 1000px;
+}
+
+.recovery form{
+    padding-top: 0em;
+    background-color: transparent;
+    text-align: center;
+}
+.recovery form > div > *{
+    display: inline-block;
+    vertical-align: middle;
+}
+.recovery p{
+    max-width: 500px;
+    margin:0 auto;
+}
+.recovery input{
+    width: 360px;
+    height: 50px;
+    border-radius: 8px 0 0 8px;
+    background-color: rgb(233, 243, 222);
+    border:1px solid rgb(172, 194, 150);
 }
