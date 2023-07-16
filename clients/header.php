@@ -12,10 +12,10 @@
         <span><?php echo $_SESSION["frixio-user"]["name"]?></span>
         <div class="arrow-down"></div>
         <div class="user-menu-div">
-            
-            <div>Cambiar Contraseña</div>
+            <a href="<?php echo $relativePath?>change-pass/">
+                <div>Cambiar Contraseña</div>
+            </a>
             <a href="<?php echo $relativePath?>login/logout.php">
-
                 <div>Cerrar Sesión</div>
             </a>
         </div>

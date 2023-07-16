@@ -29,6 +29,11 @@ btnIngresar.on("click", async function(e){
         spanError.classList.add("visible");
         return;
     }
+    if(res.status == 503){
+        alert(res.data);
+        btnIngresar.classList.remove("disabled");
+        return;
+    }
 
     location.href = "../";
 

@@ -1,0 +1,113 @@
+@import "header.css";
+
+main{
+    text-align: center;
+}
+section{
+    display: inline-grid;
+    grid-template-columns: auto;
+    margin:0 auto;
+}
+form{
+    color:white;
+    background-color: white;
+    background-color: #272727;
+    display: inline-block;
+    text-align: center;
+    padding: 1em 2em;
+    margin: 30px 0;
+}
+button{
+    /* padding:1em 2em; */
+    font-size:18px;
+    font-weight: bolder;
+    color:white;
+    background-color: darkgreen;
+}
+button:not(.disabled):hover{
+    background-color: hsl(120, 100%, 25%);
+}
+
+input{
+    padding: .5em 0em .3em 0;
+    font-size: 20px;
+    width: 200px;
+    border: 0 solid #111;
+    border-bottom-width: 1px;
+    text-align: center;
+    background-color: #111;
+    color:white;
+    margin-top: .2em;
+}
+input:focus{
+    outline: none;
+}
+
+.req{
+    display: inline-block;
+    
+    background-color: #272727;
+    padding:2em;
+    padding-bottom: 1em;
+    text-align: left;
+}
+.req span{
+    font-size: 16px;
+    /* font-weight: bold; */
+    color:#eee;
+}
+.req > div{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+.req svg{
+    width: 16px;
+    height: 16px;
+}
+.req .check{
+    fill:lightgreen;
+}
+
+.req div .check{
+    display: none;
+}
+.req div.good .check{
+    display: inline;
+}
+.req div.good .x{
+    display: none;
+}
+.req .x{
+    fill:lightcoral;
+}
+button{
+    width: 120px;
+    height: 60px;
+}
+button svg{
+    display: none;
+}
+button.success svg{
+    display: inline;
+    width: 32px;
+    fill:lightgreen;
+}
+button.disabled{
+    background-color: hsl(120, 20%, 25%);
+    color:#ccc;
+}
+button .spinner{
+    display: none;
+}
+button.loading .spinner{
+    display:inline-block;
+}
+button.loading span{
+    display:none;
+}
+button.success span{
+    display: none;
+}

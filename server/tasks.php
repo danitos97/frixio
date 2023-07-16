@@ -39,14 +39,16 @@ switch($option){
         send();
 
 
+
     case "pay":
+
         checkSession();
         include "payworks.php";
 
 
+
     case "recoveryMail":
         
-
         $to = safePOST("to");
         if(!$to) send(401);
 
@@ -67,6 +69,21 @@ switch($option){
         $mail = sendMail($to, $subject, $body);
                 
         send();
+
+
+        
+    case "changePass":
+
+        $user = checkSession()["id"];
+
+        $pass = safePOST("pass");
+        if(!$pass) send(401);
+
+        $pass = password_hash($pass, PASSWORD_DEFAULT);
+        $sql = "UPDATE users SET pass = '$pass' where id = $user";
+        $link -> query($sql);
+
+        send();
         
         
         
@@ -75,6 +92,7 @@ switch($option){
 function checkSession(){
     if(!isset($_SESSION["frixio-user"]))
         send(401);
+    return $_SESSION["frixio-user"];
 }
 
 ?>

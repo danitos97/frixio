@@ -86,7 +86,7 @@ main{
     font-size: 14px;
     font-weight: bold;
 }
-.user-menu-div  > *:first-child{
+.user-menu-div  > *:first-child div{
     margin-top:6px;
 }
 .user-menu-div  div:hover{

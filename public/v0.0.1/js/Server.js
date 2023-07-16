@@ -21,6 +21,10 @@ export default class Server{
         return await Server.#post("recoveryMail", {to: email});
     }
 
+    static async changePass(pass){
+        return await Server.#post("changePass",{pass: pass});
+    }
+
     static async #post(option,data){
         const body = new FormData();
         body.append("option",option)

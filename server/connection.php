@@ -4,8 +4,13 @@ function connection(){
     $user = getenv("MYSQL_USER");
     $pass = getenv("MYSQL_PASS");
     $base = getenv("MYSQL_BASE");
-    $link = new mysqli("localhost", $user, $pass, $base);
-    $link -> set_charset("utf8");
+    $link = false;
+    try{
+        $link = new mysqli("localhost", $user, $pass, $base);
+        $link -> set_charset("utf8");
+    }catch(Exception $e){
+        send(503,"No se pudo conectar con la base de datos");
+    }
     return $link;
 }
 
