@@ -1,10 +1,10 @@
 <?php 
 // http://localhost/frixio/server/templates/recovery.php
 
-// echo recoveryTemplate("Daniel Rivera", "a");
+//echo recoveryTemplate("Daniel Rivera", "a");
 
 function recoveryTemplate($name, $link){
-    return  "
+    return "
         <html>
             <head>
                 <style>
@@ -15,13 +15,12 @@ function recoveryTemplate($name, $link){
                         box-sizing:border-box;
                         font-family:Arial;
                     }
-
                     button{
                         background-color:darkgreen;
                         color:white;
                         cursor:pointer;
                         font-weight:bolder;
-                        padding:  1em;
+                        padding: 1em;
                         font-size:16px;
                     }
                     button:hover{
@@ -44,19 +43,18 @@ function recoveryTemplate($name, $link){
                     </p> 
                     <br>
                     <p>
-                        Si necesitas restablecer tu contraseña presiona el siguiente botón.
+                        Si necesitas restablecer tu contraseña, presiona el siguiente botón.
                     </p>
                     <br>
                     <a href='$link'>
                         <button>Restablecer Contraseña</button>
                     </a>
                     <br><br>
-                    <p>De lo contrario, favor de ignorar este correo.</p>
+                    <p>De lo contrario, favor de ignorar este correo. El enlace caducara despues de 2 horas de haber sido generado.</p>
                 </div>
-                
             </body>
-        </html>
-    ";
+        </html>";
+    
 }
 ?>
 

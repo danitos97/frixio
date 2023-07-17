@@ -1,16 +1,12 @@
 import Server from "../Server.js";
 
-
 const btnIngresar = $("#btn-login");
 const inputUser = $("#frixio-user");
 const inputPass = $("#frixio-pass");
 const spanError = $(".error");
 
-
 btnIngresar.on("click", async function(e){
-
     spanError.classList.remove("visible");
-
     const user = inputUser.value;
     const pass = inputPass.value;
     if(user == "" || pass == "")
@@ -34,16 +30,12 @@ btnIngresar.on("click", async function(e){
         btnIngresar.classList.remove("disabled");
         return;
     }
-
     location.href = "../";
-
 });
-
 
 const btnRecovery = $(".recovery-btn");
 const recovery    = $(".recovery");
 const inputRecovery = $("#input-recovery ");
-
 
 btnRecovery.on("click", function(){
 
@@ -51,15 +43,12 @@ btnRecovery.on("click", function(){
         return;
 
     recovery.classList.add("visible");
-
     inputRecovery.value = inputUser.value;
-
 });
-
 
 const btnSendMail = $(".recovery button");
 
-btnSendMail.on("click", async function(e){
+btnSendMail.on("click", function(e){
     const mail = inputRecovery.value;
     if(mail == "") return;
 
@@ -69,11 +58,7 @@ btnSendMail.on("click", async function(e){
         return;
 
     btnSendMail.classList.add("used");
-
-    const res = await Server.recoveryMail(mail);
-    console.log(res);
-
-    //Server.recoveryMail(mail);
+    Server.recoveryMail(mail);
 });
 
 inputRecovery.on("change",function(){

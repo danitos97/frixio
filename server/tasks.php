@@ -48,21 +48,36 @@ switch($option){
 
 
     case "recoveryMail":
-        
         $to = safePOST("to");
         if(!$to) send(401);
 
 
-        $user = getAllFromTable("users","email='$to'");
+        $user = getAllFromTable("users","email = '$to'");
         if(!$user) send(401);
 
+        $user = $user[0];
+        $idUser = $user["id"];
+
+        $token = bin2hex(random_bytes(32));
+        $tokenEncrypted = password_hash($token,PASSWORD_DEFAULT);
+        
+        $expiration = date('Y-m-d H:i:s');
+        $sql = "INSERT into recovery_tokens (idUser, tokenEncrypted, expiration) 
+                       value ($idUser, '$tokenEncrypted', DATE_ADD(now(),interval 2 hour))";
+
+        $link -> query($sql);
+
+        $idToken = $link -> insert_id;
+
+        
+        $link = getenv("URL")."server/recovery.php?idToken=$idToken&token=$token";
+        
         include "email.php";
         include 'templates/recovery.php';
 
         $subject = "Restablecer Contraseña";
 
-        $name = $user[0]["name"];
-        $link = getenv("URL")."clients/recovery?key=123456789";
+        $name = $user["name"];
 
         $body = recoveryTemplate($name, $link);
 
