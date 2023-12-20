@@ -1,5 +1,8 @@
 
-<?php include("version.php") ?>
+<?php 
+    header("Location: ./error.php");
+    include("version.php");
+?>
 
 <!DOCTYPE html>
 <html lang="es">
